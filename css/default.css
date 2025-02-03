@@ -12395,6 +12395,57 @@ body.night .twikoo code {
     background-color: #373d48;
   }
 }
+@media screen {
+  .navbar > .container {
+    display: block;
+  }
+  .navbar-brand .navbar-item,
+  .navbar-tabs .navbar-item {
+    align-items: center;
+    display: flex;
+  }
+  .navbar-link::after {
+    display: none;
+  }
+  .navbar-menu {
+    background-color: rgba(255,255,255,0);
+    box-shadow: 0 8px 16px rgba(10,10,10,0);
+    padding: 0.5rem 0;
+  }
+  .navbar-menu.is-active {
+    display: block;
+  }
+  .navbar.is-fixed-bottom-touch,
+  .navbar.is-fixed-top-touch {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+  }
+  .navbar.is-fixed-bottom-touch {
+    bottom: 0;
+  }
+  .navbar.is-fixed-bottom-touch.has-shadow {
+    box-shadow: 0 -2px 3px rgba(10,10,10,0.1);
+  }
+  .navbar.is-fixed-top-touch {
+    top: 0;
+  }
+  .navbar.is-fixed-top .navbar-menu,
+  .navbar.is-fixed-top-touch .navbar-menu {
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 3.25rem);
+    overflow: auto;
+  }
+  html.has-navbar-fixed-top-touch,
+  body.has-navbar-fixed-top-touch {
+    padding-top: 3.25rem;
+  }
+  html.has-navbar-fixed-bottom-touch,
+  body.has-navbar-fixed-bottom-touch {
+    padding-bottom: 3.25rem;
+  }
+}
 #universe {
   display: none;
 }
@@ -13098,5 +13149,56 @@ body.night .twikoo code {
   body:not(.light) .twikoo code {
     color: #cbba7d;
     background-color: #373d48;
+  }
+}
+@media screen {
+  .navbar > .container {
+    display: block;
+  }
+  .navbar-brand .navbar-item,
+  .navbar-tabs .navbar-item {
+    align-items: center;
+    display: flex;
+  }
+  .navbar-link::after {
+    display: none;
+  }
+  .navbar-menu {
+    background-color: rgba(255,255,255,0);
+    box-shadow: 0 8px 16px rgba(10,10,10,0);
+    padding: 0.5rem 0;
+  }
+  .navbar-menu.is-active {
+    display: block;
+  }
+  .navbar.is-fixed-bottom-touch,
+  .navbar.is-fixed-top-touch {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+  }
+  .navbar.is-fixed-bottom-touch {
+    bottom: 0;
+  }
+  .navbar.is-fixed-bottom-touch.has-shadow {
+    box-shadow: 0 -2px 3px rgba(10,10,10,0.1);
+  }
+  .navbar.is-fixed-top-touch {
+    top: 0;
+  }
+  .navbar.is-fixed-top .navbar-menu,
+  .navbar.is-fixed-top-touch .navbar-menu {
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 3.25rem);
+    overflow: auto;
+  }
+  html.has-navbar-fixed-top-touch,
+  body.has-navbar-fixed-top-touch {
+    padding-top: 3.25rem;
+  }
+  html.has-navbar-fixed-bottom-touch,
+  body.has-navbar-fixed-bottom-touch {
+    padding-bottom: 3.25rem;
   }
 }
