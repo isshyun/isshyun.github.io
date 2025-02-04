@@ -5,7 +5,7 @@
      * https://www.imaegoo.com/
         */
   
-      var isNight = localStorage.getItem('night');
+      var isNight = localStorage.getItem('night') || true;
       var nightNav;
   
     function applyNight(value) {
