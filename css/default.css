@@ -12402,6 +12402,9 @@ body.night .twikoo code {
     padding: 0.5rem 0;
   }
 }
+.qrcode img {
+  width: 100px;
+}
 .navbar-main {
   position: fixed !important;
   width: 100% !important;
@@ -13121,4 +13124,7 @@ body.night .twikoo code {
     box-shadow: 0 8px 16px rgba(10,10,10,0);
     padding: 0.5rem 0;
   }
+}
+.qrcode img {
+  width: 100px;
 }

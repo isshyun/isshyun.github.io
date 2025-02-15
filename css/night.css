@@ -710,3 +710,6 @@ body.night .twikoo code {
     padding: 0.5rem 0;
   }
 }
+.qrcode img {
+  width: 100px;
+}
